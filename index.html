@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de tabuada</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="text-center p-8 min-h-screen bg-slate-500 text-stone-900">
+    <h1 class="text-5xl mb-4 font-bold text-stone-900">Digite o número e confirme para gerar uma tabuada</h1>
+    <form class="flex justify-center items-center flex-wrap my-4 mx-auto max-w-80 p-8 bg-slate-600 rounded-lg text-stone-900 text-2xl border-2 border-stone-900" id="multiplication-form">
+        <div class="form-control">
+            <label class="font-bold" for="number">Tabuada do:</label>
+            <input class="p-1 border-2 border-stone-900 focus:outline-none bg-slate-500 text-center"  type="number" name="number" id="number" placeholder="5">
+        </div>
+        <div class="form-control">
+            <label class="font-bold" for="multiplicator">Multiplicar até:</label>
+            <input class="p-1 border-2 border-stone-900 focus:outline-none bg-slate-500 text-center" type="number" name="multiplicator" id="multiplicator" placeholder="10">
+        </div>
+        <input class="bg-slate-500 mt-4 p-1 rounded-lg font-bold cursor-pointer border-2 border-stone-900 w-full" type="submit" value="Calcular">
+    </form>
+    <div class="font-bold text-2xl text-stone-900" id="multiplication-table">
+        <h2 id="multiplication-title">Tabuada do número: <span></span></h2>
+        <div class="multiplication-operations flex flex-col items-center py-8 px-4 bg-slate-600 max-w-80 my-4 mx-auto border-2 border-stone-900 rounded-lg">
+            <p>Informe um número para calcular uma tabuada...</p>
+            <div class="row flex justify-center border-2 border-slate-500 border-b-transparent last:border-b-slate-500 p-1 w-60">
+                <div class="operation">5 x 1 =</div>
+                <div class="result ml-2">5</div>
+            </div>
+            <div class="row flex justify-center border-2 border-slate-500 border-b-transparent last:border-b-slate-500 p-1 w-60">
+                <div class="operation">5 x 1 =</div>
+                <div class="result ml-2">5</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
